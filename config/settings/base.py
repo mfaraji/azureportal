@@ -39,7 +39,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 
 DATABASES = {
-    'default': env.db('DATABASE_URL', default='postgres:///azureportal'),
+    'default': env.db('DATABASE_URL', default='sqlite:///../../azureportal'),
 }
 DATABASES['default']['ATOMIC_REQUESTS'] = True
 
